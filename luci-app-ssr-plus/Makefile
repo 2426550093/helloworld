@@ -58,7 +58,7 @@ menu "Include libustream-ssl"
 
 	config PACKAGE_$(PKG_NAME)_INCLUDE_libustream-mbedtls
 		depends on !(PACKAGE_$(PKG_NAME)_INCLUDE_libustream-wolfssl || PACKAGE_$(PKG_NAME)_INCLUDE_libustream-openssl)
-		bool "Include libustream-mbedtls"
+		bool "Use libustream-mbedtls"
 		default y if DEFAULT_libustream-mbedtls
 		select PACKAGE_libustream-mbedtls
 
